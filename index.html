@@ -1,0 +1,197 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <title>Nu Laguna</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"  ><span><img src="logo.png" alt="logo" style="height:80px; width: 250px; margin-left: 5px;margin-right:5px;"></span></a>
+        
+            <div id="menu" class="fas fa-bars"></div>
+        
+            <nav class="navbar">
+                <a class="active" href="#home">Home</a>
+                <a href="#course">News</a>
+                <a href="#course">Admissions</a>
+                <a href="#sch">Scholarships</a>
+                <a href="#abt">Alumni</a>
+                <a href="#abt">Careers</a>
+                <a href="#abt">Research</a>
+                <a href="#abt">Contact Us</a>
+            </nav>
+        
+        </header>     
+    
+    <section id="home">
+        <div class="img-header wrap">
+            <div class="fullscreen-img-wrap">
+                <img src="bg.jpg" alt="bg">
+            </div>
+        
+            <div class="header-overlay">
+                <div class="header-content">
+                    <h1>NU Laguna</h1>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section> 
+        
+    <section id="" class="course">
+
+        <div class="column">
+
+            <div class="box-container">
+    
+                <h3 class="title">Courses</h3>
+    
+                <div class="box">
+           
+                    <div class="info">
+                             <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1">ACCOUNTANCY, BUSINESS & MANAGEMENT</button>
+                            <div id="demo1" class="collapse">
+                                BS Accountancy <br>
+                                BS Business Administration major in Marketing and Advertising<br>
+                                Master in Management<br>
+                                BS Tourism Management<br>
+                            </div>
+
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2">ARCHITECTURE</button>
+                            <div id="demo2" class="collapse">
+                                BS Architecture
+                            </div>
+
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo3">COMPUTING & INFORMATION TECHNOLOGIES</button>
+                            <div id="demo3" class="collapse">
+                                BS Information Technology <br>
+                                BS Computer Science<br>
+                                BS Information Systems<br>
+                                Bachelor of Multimedia Arts<br>
+                                Master in Information Technology<br>
+                            </div>
+
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo4">EDUCATION ARTS & SCIENCES</button>
+                            <div id="demo4" class="collapse">
+                                Bachelor of Science Exercise and Sports Sciencebr <br>
+                                BS Psychology<br>
+                                BA Communication<br>
+                                NUL-MA in Education, Major in English<br>
+                                MA in Education, Major in Filipino<br>
+                                MA in Education, Major in Special Education<br>
+                                MA in Education, Major in Educational Management<br>
+                                Doctor of Education, Major in Educational Management<br>
+                            </div>
+
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo5">ENGINEERING</button>
+                            <div id="demo5" class="collapse">
+                                BS Computer Engineering <br>
+                                BS Civil Engineering <br>
+                            </div>
+
+                            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo6">SENIOR HIGH SCHOOLS</button>
+                            <div id="demo6" class="collapse">
+                                Humanities and Social Sciences <br>
+                                Sciences, Technology, Engineering and Mathematics <br>
+                                Accountancy, Business and Management <br>
+                                Sports Track <br>
+                            </div>
+                    </div>
+                
+                  
+                </div>
+    
+    
+            </div>   
+
+            
+
+        </div>
+            
+    
+    </section> 
+
+    <section>
+        <div>
+            
+        </div>
+    </section>
+    
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/swipe.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+
+  $('#menu').click(function(){
+    $(this).toggleClass('fa-times');
+    $('.navbar').toggleClass('nav-toggle');
+  });
+
+  $(window).on('load scroll',function(){
+
+    $('#menu').removeClass('fa-times');
+    $('.navbar').removeClass('nav-toggle');
+
+    if($(window).scrollTop() > 0){
+      $('header').addClass('sticky');
+    }else{
+      $('header').removeClass('sticky');
+    }
+
+    if($(window).scrollTop() > 0){
+      $('.scroll-top').show();
+    }else{
+      $('.scroll-top').hide();
+    }
+
+    // scroll spy 
+
+    $('section').each(function(){
+
+      let top = $(window).scrollTop();
+      let offset = $(this).offset().top - 200;
+      let id = $(this).attr('id');
+      let height = $(this).height();
+
+      if(top > offset && top < offset + height){
+        $('.navbar a').removeClass('active');
+        $('.navbar').find(`[href="#${id}"]`).addClass('active');
+      }
+
+    });
+
+  });
+
+  // smooth scrolling 
+
+  $('a[href*="#"]').on('click',function(e){
+
+    $('html, body').animate({
+
+      scrollTop : $($(this).attr('href')).offset().top,
+
+    },
+      500,
+      'linear'
+    );
+
+  });
+
+});
+</script>
+
+</body>
+</html>
